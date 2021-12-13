@@ -14,11 +14,11 @@ This repo was designed to demonstrate the use of a public API, by periodically s
 This should be written in Node.js or Typescript. Please include tests.
 
 
-## Running
+## Installating and running the project
 
 1) Clone the repo and enter the folder
 ```
-   git clone https://github.com/fabioseno/minnowpod-api
+git clone https://github.com/fabioseno/minnowpod-api
 ```
 
 2) Install npm dependencies
@@ -26,12 +26,14 @@ This should be written in Node.js or Typescript. Please include tests.
 npm install
 ```
 
-3) Run the server
+3) Copy the .env file sent by e-mail to the root folder
+
+4) Run the server
 ```
 npm start
 ```
 
-4) Run the tests
+5) Run the tests
 ```
 npm test
 ```
