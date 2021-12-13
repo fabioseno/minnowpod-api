@@ -14,29 +14,17 @@ This repo was designed to demonstrate the use of a public API, by periodically s
 This should be written in Node.js or Typescript. Please include tests.
 
 
-## Installating and running the project
+## Running the project
 
-1) Clone the repo and enter the folder
-```
-git clone https://github.com/fabioseno/minnowpod-api
-```
+1) Run `git clone git@github.com:fabioseno/minnowpod-api.git` to clone the repo and enter the folder
 
-2) Install npm dependencies
-```
-npm install
-```
+2) Run `npm install`
 
 3) Copy the .env file sent by e-mail to the root folder
 
-4) Run the server
-```
-npm start
-```
+4) Run `npm start` to start the server
 
-5) Run the tests
-```
-npm test
-```
+5) Run `npm test` to run the tests
 
 
 ## Solution
@@ -73,8 +61,8 @@ https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list
 ### Problems
 
 - the third-party API had lot of inconsistencies that demanded more time than expected such as:
-  - cocktails with duplicated ingredients causing local database constraints to break. [https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Kiwi%20Martini](duplicated ingredients).
-  - recipes containing non UTF8 characters causing database to crash on insert/update. [https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Winter%20Rita](non UTF8 character inside instructions).
+  - cocktails with duplicated ingredients causing local database constraints to break. [duplicated ingredients](https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Kiwi%20Martini).
+  - recipes containing non UTF8 characters causing database to crash on insert/update. [non UTF8 character inside instructions](https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Winter%20Rita).
   - drinks with null values in the ```dateModified``` attribute, that led to a change in the syncronization strategy.  
 
 ### Code
