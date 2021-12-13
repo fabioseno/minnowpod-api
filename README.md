@@ -61,9 +61,9 @@ https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list
 ### Problems
 
 - the third-party API had lot of inconsistencies that demanded more time than expected such as:
-  - cocktails with duplicated ingredients causing local database constraints to break. [duplicated ingredients](https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Kiwi%20Martini).
-  - recipes containing non UTF8 characters causing database to crash on insert/update. [non UTF8 character inside instructions](https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Winter%20Rita).
-  - drinks with null values in the ```dateModified``` attribute, that led to a change in the syncronization strategy.  
+  - cocktails with duplicated ingredients causing local database constraints to break. ([duplicated ingredients](https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Kiwi%20Martini)).
+  - recipes containing non UTF8 characters causing database to crash on insert/update. ([non UTF8 character inside instructions](https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Winter%20Rita)).
+  - drinks with null values in the `dateModified` attribute, that led to a change in the syncronization strategy.  
 
 ### Code
 
